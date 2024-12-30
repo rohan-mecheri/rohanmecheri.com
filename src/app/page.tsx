@@ -121,7 +121,7 @@ export default function Home() {
           <ul style={{ paddingLeft: '40px', marginTop: '10px', listStyleType: 'none' }}>
             <li>- CoderDojo is a global network of free, volunteer-led coding clubs for young people ages 7 to 17.</li>
             <li>- Taught programming to over 500 students over the course of 4 years.</li>
-            <li>- Recognized as CoderDojo's youngest-ever mentor in South Asia.</li>
+            <li>- Recognized as CoderDojo&apos;s youngest-ever mentor in South Asia.</li>
           </ul>
         </div>
 
