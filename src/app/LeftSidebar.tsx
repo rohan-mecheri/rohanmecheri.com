@@ -1,4 +1,4 @@
-'use client'; // This directive enables client-side rendering
+'use client'; // Enable client-side rendering for interactivity
 
 export default function LeftSidebar() {
   return (
@@ -19,34 +19,122 @@ export default function LeftSidebar() {
         src="/profile.jpg"
         alt="Profile Picture"
         style={{
-          width: '200px',
-          height: '200px',
+          width: '160px',
+          height: '155px',
           borderRadius: '50%',
-          objectFit: 'cover', // Ensures the image fits properly
+          objectFit: 'cover',
         }}
       />
 
       {/* Headline */}
-      <h1 style={{ marginTop: '20px' }}>Rohan Mecheri</h1>
-      <p style={{ lineHeight: '1.5' }}>Applied Math & CS @ Carnegie Mellon University</p>
+      <h1 style={{ marginTop: '6px', textAlign: 'center', fontSize: '20px' }}>Rohan Mecheri</h1>
+      {/* Section Separator */}
+      <div
+        style={{
+          width: '45%',
+          height: '2px',
+          backgroundColor: '#0070f3',
+          margin: '13px 0',
+        }}
+      />
+        <p style={{ lineHeight: '1.5', textAlign: 'center' }}>Carnegie Mellon University</p>
+        <p style={{ lineHeight: '1.5', textAlign: 'center' }}>Applied Math & Computer Science</p>
 
+
+
+        <div
+       style={{
+         width: '100%', // Make the line span the full width
+         textAlign: 'center', // Center align the text
+         marginTop: '20px', // Add spacing from the previous section
+       }}
+     >
+       <p style={{ margin: 0,lineHeight: '1.5' }}>
+         Previously at{' '}
+         <a
+           href="https://www.pando.ai/"
+           target="_blank"
+           rel="noopener noreferrer"
+           style={{
+             color: '#0070f3', // Link color
+             textDecoration: 'none', // Remove underline
+           }}
+           onMouseOver={(e) => (e.currentTarget.style.textDecoration = 'underline')} // Hover effect
+           onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
+         >
+           Pando
+         </a>
+         ,{' '}
+         <a
+           href="https://www.indiumsoftware.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           style={{
+             color: '#0070f3',
+             textDecoration: 'none',
+           }}
+           onMouseOver={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+           onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
+         >
+           Indium
+         </a>
+         , and{' '}
+         <a
+           href="https://www.crayondata.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           style={{
+             color: '#0070f3',
+             textDecoration: 'none',
+           }}
+           onMouseOver={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+           onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
+         >
+           Crayon Data
+         </a>
+       </p>
+     </div>
+
+
+        <div
+        style={{
+          width: '45%',
+          height: '2px',
+          backgroundColor: '#0070f3',
+          margin: '13px 0',
+        }}
+      />
+     
+    
       {/* About Me */}
-      <p style={{ marginTop: '20px', textAlign: 'center', padding: '0 20px' }}>
-        Hi, I'm Rohan! I'm passionate about building innovative web applications and solving complex problems.
-        With experience in software engineering, data analysis, and NLP, I strive to deliver impactful solutions.
+      <p style={{ textAlign: 'center',padding: '0 20px' }}>
+      As a sophomore at Carnegie Mellon University, I'm driven by developing and deploying solutions that address real-world issues. My experience includes areas like Machine Learning, where I've developed models leveraging deep learning architectures, including recurrent neural networks, for predictive modeling and natural language processing.
       </p>
+      <p style={{ textAlign: 'center',padding: '0 20px' }}>
+      <br></br>I possess a strong foundation in programming languages and a growing expertise in machine learning frameworks, which I continuously strive to expand through experience and learning.
+      </p>
+
+      {/* Section Separator */}
+      <div
+        style={{
+          width: '45%',
+          height: '2px',
+          backgroundColor: '#0070f3',
+          margin: '13px 0',
+        }}
+      />
 
       {/* Social Links */}
       <div style={{ display: 'flex', gap: '20px', marginTop: '20px' }}>
-        {/* GitHub */}
-        <div style={{ marginTop: '10px' }}>
+        {/* GitHub Button */}
+        <div style={{ marginTop: '0px' }}>
           <a
             href="https://github.com/rohan-mecheri"
             target="_blank"
             rel="noopener noreferrer"
             style={{
               display: 'inline-block',
-              width: '40px',
+              width: '30px',
               height: '60px',
               backgroundImage: "url('/github-logo.png')",
               backgroundSize: 'contain',
@@ -55,39 +143,39 @@ export default function LeftSidebar() {
               transition: 'transform 0.2s ease, opacity 0.2s ease',
             }}
             onMouseOver={(e) => {
-              e.currentTarget.style.transform = 'scale(1.3)';
-              e.currentTarget.style.opacity = '1';
+              e.currentTarget.style.transform = 'scale(1.3)'; // Hover effect: enlarge
+              e.currentTarget.style.opacity = '1'; // Full opacity
             }}
             onMouseOut={(e) => {
-              e.currentTarget.style.transform = 'scale(1)';
-              e.currentTarget.style.opacity = '0.4';
+              e.currentTarget.style.transform = 'scale(1)'; // Reset size
+              e.currentTarget.style.opacity = '0.4'; // Reset opacity
             }}
           />
         </div>
 
-        {/* LinkedIn */}
-        <div style={{ marginTop: '10px' }}>
+        {/* LinkedIn Button */}
+        <div style={{ marginTop: '0px' }}>
           <a
             href="https://linkedin.com/in/rohanmecheri"
             target="_blank"
             rel="noopener noreferrer"
             style={{
               display: 'inline-block',
-              width: '40px',
+              width: '30px',
               height: '60px',
               backgroundImage: "url('/linkedin-logo.png')",
               backgroundSize: 'contain',
               backgroundRepeat: 'no-repeat',
-              opacity: 0.5,
+              opacity: 0.4,
               transition: 'transform 0.2s ease, opacity 0.2s ease',
             }}
             onMouseOver={(e) => {
-              e.currentTarget.style.transform = 'scale(1.3)';
-              e.currentTarget.style.opacity = '1';
+              e.currentTarget.style.transform = 'scale(1.3)'; // Hover effect: enlarge
+              e.currentTarget.style.opacity = '1'; // Full opacity
             }}
             onMouseOut={(e) => {
-              e.currentTarget.style.transform = 'scale(1)';
-              e.currentTarget.style.opacity = '0.4';
+              e.currentTarget.style.transform = 'scale(1)'; // Reset size
+              e.currentTarget.style.opacity = '0.4'; // Reset opacity
             }}
           />
         </div>
