@@ -50,7 +50,7 @@ export default function LeftSidebar() {
        }}
      >
        <p style={{ margin: 5,lineHeight: '1.5' }}>
-         Previously at{' '}
+         Experience at{' '}
          <a
            href="https://www.pando.ai/"
            target="_blank"
