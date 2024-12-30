@@ -10,7 +10,7 @@ export default function LeftSidebar() {
         alignItems: 'center',
         justifyContent: 'flex-start',
         backgroundColor: '#f4f4f4',
-        padding: '20px',
+        padding: '40px',
         height: '100vh',
       }}
     >
@@ -27,14 +27,14 @@ export default function LeftSidebar() {
       />
 
       {/* Headline */}
-      <h1 style={{ marginTop: '6px', textAlign: 'center', fontSize: '20px' }}>Rohan Mecheri</h1>
+      <h1 style={{ marginTop: '10px', textAlign: 'center', fontSize: '21px' }}>Rohan Mecheri</h1>
       {/* Section Separator */}
       <div
         style={{
           width: '45%',
           height: '2px',
           backgroundColor: '#0070f3',
-          margin: '13px 0',
+          margin: '15px 0',
         }}
       />
         <p style={{ lineHeight: '1.5', textAlign: 'center' }}>Carnegie Mellon University</p>
@@ -46,10 +46,10 @@ export default function LeftSidebar() {
        style={{
          width: '100%', // Make the line span the full width
          textAlign: 'center', // Center align the text
-         marginTop: '20px', // Add spacing from the previous section
+         marginTop: '22px', // Add spacing from the previous section
        }}
      >
-       <p style={{ margin: 0,lineHeight: '1.5' }}>
+       <p style={{ margin: 5,lineHeight: '1.5' }}>
          Previously at{' '}
          <a
            href="https://www.pando.ai/"
@@ -98,34 +98,16 @@ export default function LeftSidebar() {
 
         <div
         style={{
-          width: '45%',
+          width: '60%',
           height: '2px',
           backgroundColor: '#0070f3',
-          margin: '13px 0',
+          margin: '12px 0',
         }}
       />
-     
-    
-      {/* About Me */}
-      <p style={{ textAlign: 'center',padding: '0 20px' }}>
-      As a sophomore at Carnegie Mellon University, I'm driven by developing and deploying solutions that address real-world issues. My experience includes areas like Machine Learning, where I've developed models leveraging deep learning architectures, including recurrent neural networks, for predictive modeling and natural language processing.
-      </p>
-      <p style={{ textAlign: 'center',padding: '0 20px' }}>
-      <br></br>I possess a strong foundation in programming languages and a growing expertise in machine learning frameworks, which I continuously strive to expand through experience and learning.
-      </p>
 
-      {/* Section Separator */}
-      <div
-        style={{
-          width: '45%',
-          height: '2px',
-          backgroundColor: '#0070f3',
-          margin: '13px 0',
-        }}
-      />
 
       {/* Social Links */}
-      <div style={{ display: 'flex', gap: '20px', marginTop: '20px' }}>
+      <div style={{ display: 'flex', gap: '20px', marginTop: '13px' }}>
         {/* GitHub Button */}
         <div style={{ marginTop: '0px' }}>
           <a
@@ -134,7 +116,7 @@ export default function LeftSidebar() {
             rel="noopener noreferrer"
             style={{
               display: 'inline-block',
-              width: '30px',
+              width: '35px',
               height: '60px',
               backgroundImage: "url('/github-logo.png')",
               backgroundSize: 'contain',
@@ -161,7 +143,7 @@ export default function LeftSidebar() {
             rel="noopener noreferrer"
             style={{
               display: 'inline-block',
-              width: '30px',
+              width: '35px',
               height: '60px',
               backgroundImage: "url('/linkedin-logo.png')",
               backgroundSize: 'contain',
