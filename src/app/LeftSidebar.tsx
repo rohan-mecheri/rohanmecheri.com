@@ -31,7 +31,7 @@ export default function LeftSidebar() {
       {/* Section Separator */}
       <div
         style={{
-          width: '45%',
+          width: '55%',
           height: '2px',
           backgroundColor: '#0070f3',
           margin: '15px 0',
@@ -98,10 +98,10 @@ export default function LeftSidebar() {
 
         <div
         style={{
-          width: '60%',
+          width: '55%',
           height: '2px',
           backgroundColor: '#0070f3',
-          margin: '12px 0',
+          margin: '15px 0',
         }}
       />
 

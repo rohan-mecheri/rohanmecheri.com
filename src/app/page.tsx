@@ -4,7 +4,7 @@ import LeftSidebar from './LeftSidebar'; // Adjust the path based on where you p
 
 export default function Home() {
   return (
-    <div style={{ display: 'flex', height: '100vh', fontFamily: 'Arial, sans-serif' }}>
+    <div style={{ display: 'flex', height: '100%', fontFamily: 'Arial, sans-serif' }}>
       <LeftSidebar />
 
       {/* Right Side */}
