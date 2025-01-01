@@ -26,7 +26,7 @@ export default function Home() {
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li style={{ color: '#000', fontWeight: 'bold', fontSize: '18px' }}>
               <a
-                href="https://github.com/rohan-mecheri/predictify"
+                href="https://github.com/rohan-mecheri/lstm-enhanced-predictive-maintenance"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
