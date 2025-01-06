@@ -8,23 +8,49 @@ export default function Home() {
       <LeftSidebar />
 
       {/* Right Side */}
-      <div style={{ flex: '65%', padding: '20px', overflowY: 'scroll' }}>
+      <div style={{ flex: '65%', padding: '10px', overflowY: 'scroll' }}>
         {/* Projects and Student Initiatives Heading */}
         <h2
           style={{
-            marginBottom: '20px',
+            marginBottom: '13px',
             textAlign: 'center',
-            fontSize: '24px',
+            fontSize: '23px',
             fontWeight: 'bold',
           }}
         >
           Projects and Student Initiatives
         </h2>
 
-        {/* Predictify */}
-        <div style={{ marginBottom: '30px' }}>
+        {/* BetterJava */}
+        <div style={{ marginBottom: '13px' }}>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li style={{ color: '#000', fontWeight: 'bold', fontSize: '18px' }}>
+            <li style={{ fontSize: '17px', color: '#000' }}>
+              <a
+                href="https://github.com/rohan-mecheri/BetterJava"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: 'none',
+                  color: '#0070f3',
+                  fontWeight: 'bold',
+                  transition: 'text-decoration 0.2s ease',
+                }}
+                onMouseOver={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+                onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
+              >
+                BetterJava
+              </a>
+              <span style={{ fontSize: '15px', color: '#000' }}>
+                , a Java pre-processor that translates code written with indentation into brackets
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Predictify */}
+        <div style={{ marginBottom: '13px' }}>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+            <li style={{ color: '#000', fontWeight: 'bold', fontSize: '17px' }}>
               <a
                 href="https://github.com/rohan-mecheri/lstm-enhanced-predictive-maintenance"
                 target="_blank"
@@ -41,7 +67,7 @@ export default function Home() {
               </a>
             </li>
           </ul>
-          <ul style={{ paddingLeft: '40px', marginTop: '10px', listStyleType: 'none' }}>
+          <ul style={{ paddingLeft: '40px', marginTop: '5px', listStyleType: 'none' }}>
             <li>- Developed a predictive maintenance framework using Keras and LSTM neural networks to estimate Remaining Useful Life (RUL) of industrial equipment.</li>
             <li>- Implemented advanced feature engineering techniques, such as time-series decomposition and lag features, to extract insights from sensor data.</li>
             <li>- Conducted rigorous hyperparameter tuning, achieving a 7% improvement in Mean Absolute Error (MAE) compared to a baseline model.</li>
@@ -49,9 +75,9 @@ export default function Home() {
         </div>
 
         {/* PhishEye */}
-        <div style={{ marginBottom: '30px' }}>
+        <div style={{ marginBottom: '13px' }}>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li style={{ color: '#000', fontWeight: 'bold', fontSize: '18px' }}>
+            <li style={{ color: '#000', fontWeight: 'bold', fontSize: '17px' }}>
               <a
                 href="https://github.com/rohan-mecheri/phisheye"
                 target="_blank"
@@ -68,15 +94,15 @@ export default function Home() {
               </a>
             </li>
           </ul>
-          <ul style={{ paddingLeft: '40px', marginTop: '10px', listStyleType: 'none' }}>
+          <ul style={{ paddingLeft: '40px', marginTop: '5px', listStyleType: 'none' }}>
             <li>- Developed a phishing detection system using Natural Language Processing (NLP) techniques, including Logistic Regression and Support Vector Machine classifiers, to identify malicious URLs based on lexical patterns and sentiment analysis.</li>
             <li>- Achieved an 89% accuracy rate by utilizing custom vectorization techniques.</li>
           </ul>
         </div>
         {/* Chennai Volunteers */}
-          <div style={{ marginBottom: '30px' }}>
+          <div style={{ marginBottom: '13px' }}>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li style={{ fontSize: '18px', color: '#000' }}>
+            <li style={{ fontSize: '17px', color: '#000' }}>
               <a
                 href="https://www.chennaivolunteers.org"
                 target="_blank"
@@ -92,16 +118,16 @@ export default function Home() {
               >
                 Chennai Volunteers
               </a>
-              <span style={{ fontSize: '16px', color: '#000' }}>
+              <span style={{ fontSize: '15px', color: '#000' }}>
                 , a micro-volunteering portal for the Giving Matters Foundation.
               </span>
             </li>
           </ul>
         </div>
         {/* CoderDojo */}
-        <div style={{ marginBottom: '30px' }}>
+        <div style={{ marginBottom: '13px' }}>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li style={{ color: '#000', fontWeight: 'bold', fontSize: '18px' }}>
+            <li style={{ color: '#000', fontWeight: 'bold', fontSize: '17px' }}>
               <a
                 href="https://coderdojo.com"
                 target="_blank"
@@ -118,7 +144,7 @@ export default function Home() {
               </a>
             </li>
           </ul>
-          <ul style={{ paddingLeft: '40px', marginTop: '10px', listStyleType: 'none' }}>
+          <ul style={{ paddingLeft: '40px', marginTop: '5px', listStyleType: 'none' }}>
             <li>- CoderDojo is a global network of free, volunteer-led coding clubs for young people ages 7 to 17.</li>
             <li>- Taught programming to over 500 students over the course of 4 years.</li>
             <li>- Recognized as CoderDojo&apos;s youngest-ever mentor in South Asia.</li>
@@ -126,13 +152,13 @@ export default function Home() {
         </div>
 
         {/* Supplemental Instructor */}
-        <div style={{ marginBottom: '30px' }}>
+        <div style={{ marginBottom: '13px' }}>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li style={{ color: '#000', fontWeight: 'bold', fontSize: '18px' }}>
+            <li style={{ color: '#000', fontWeight: 'bold', fontSize: '17px' }}>
               Instructor
             </li>
           </ul>
-          <ul style={{ paddingLeft: '40px', marginTop: '10px', listStyleType: 'none' }}>
+          <ul style={{ paddingLeft: '40px', marginTop: '5px', listStyleType: 'none' }}>
             <li>
               - Supplemental Instructor for 21-260 - Differential Equations under{' '}
               <a
