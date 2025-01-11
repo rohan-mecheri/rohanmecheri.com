@@ -78,7 +78,7 @@ export default function LeftSidebar() {
          >
            Indium
          </a>
-         , and{' '}
+         , {' '}
          <a
            href="https://www.crayondata.com/"
            target="_blank"
@@ -92,10 +92,22 @@ export default function LeftSidebar() {
          >
            Crayon Data
          </a>
+         , and {' '}
+         <a
+           href="https://www.coderdojo.com"
+           target="_blank"
+           rel="noopener noreferrer"
+           style={{
+             color: '#0070f3',
+             textDecoration: 'none',
+           }}
+           onMouseOver={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+           onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
+         >
+           CoderDojo
+         </a>
        </p>
      </div>
-
-
         <div
         style={{
           width: '55%',

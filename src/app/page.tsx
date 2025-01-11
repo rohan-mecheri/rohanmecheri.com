@@ -21,29 +21,30 @@ export default function Home() {
           Projects and Student Initiatives
         </h2>
 
-        {/* BetterJava */}
+        {/* BayesTune */}
         <div style={{ marginBottom: '13px' }}>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li style={{ fontSize: '17px', color: '#000' }}>
+            <li style={{ color: '#000', fontWeight: 'bold', fontSize: '17px' }}>
               <a
-                href="https://github.com/rohan-mecheri/BetterJava"
+                href="https://github.com/rohan-mecheri/BayesTune"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
                   textDecoration: 'none',
                   color: '#0070f3',
-                  fontWeight: 'bold',
                   transition: 'text-decoration 0.2s ease',
                 }}
                 onMouseOver={(e) => (e.currentTarget.style.textDecoration = 'underline')}
                 onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
               >
-                BetterJava
+                BayesTune
               </a>
-              <span style={{ fontSize: '15px', color: '#000' }}>
-                , a Java pre-processor that translates code written with indentation into brackets
-              </span>
             </li>
+          </ul>
+          <ul style={{ paddingLeft: '40px', marginTop: '5px', listStyleType: 'none' }}>
+            <li>- Developed a distributed hyperparameter tuning system leveraging Bayesian Optimization and Python's multiprocessing for parallel model evaluation.</li>
+            <li>- Automated hyperparameter search for SVM models with dynamic result logging and Dockerized deployment.</li>
+            <li>- Achieved 97.2% cross-validation accuracy in hyperparameter tuning for SVM models, with optimally computed hyperparameters</li>
           </ul>
         </div>
 
@@ -99,6 +100,33 @@ export default function Home() {
             <li>- Achieved an 89% accuracy rate by utilizing custom vectorization techniques.</li>
           </ul>
         </div>
+
+        {/* BetterJava */}
+        <div style={{ marginBottom: '13px' }}>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+            <li style={{ fontSize: '17px', color: '#000' }}>
+              <a
+                href="https://github.com/rohan-mecheri/BetterJava"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: 'none',
+                  color: '#0070f3',
+                  fontWeight: 'bold',
+                  transition: 'text-decoration 0.2s ease',
+                }}
+                onMouseOver={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+                onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
+              >
+                BetterJava
+              </a>
+              <span style={{ fontSize: '15px', color: '#000' }}>
+                , a Java pre-processor that translates code written with indentation into brackets
+              </span>
+            </li>
+          </ul>
+        </div>
+
         {/* Chennai Volunteers */}
           <div style={{ marginBottom: '13px' }}>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
@@ -122,32 +150,6 @@ export default function Home() {
                 , a micro-volunteering portal for the Giving Matters Foundation.
               </span>
             </li>
-          </ul>
-        </div>
-        {/* CoderDojo */}
-        <div style={{ marginBottom: '13px' }}>
-          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li style={{ color: '#000', fontWeight: 'bold', fontSize: '17px' }}>
-              <a
-                href="https://coderdojo.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  textDecoration: 'none',
-                  color: '#0070f3',
-                  transition: 'text-decoration 0.2s ease',
-                }}
-                onMouseOver={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
-              >
-                CoderDojo
-              </a>
-            </li>
-          </ul>
-          <ul style={{ paddingLeft: '40px', marginTop: '5px', listStyleType: 'none' }}>
-            <li>- CoderDojo is a global network of free, volunteer-led coding clubs for young people ages 7 to 17.</li>
-            <li>- Taught programming to over 500 students over the course of 4 years.</li>
-            <li>- Recognized as CoderDojo&apos;s youngest-ever mentor in South Asia.</li>
           </ul>
         </div>
 
