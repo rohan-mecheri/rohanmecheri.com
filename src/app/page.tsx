@@ -42,7 +42,7 @@ export default function Home() {
             </li>
           </ul>
           <ul style={{ paddingLeft: '40px', marginTop: '5px', listStyleType: 'none' }}>
-            <li>- Developed a distributed hyperparameter tuning system leveraging Bayesian Optimization and Python's multiprocessing for parallel model evaluation.</li>
+            <li>- Developed a distributed hyperparameter tuning system leveraging Bayesian Optimization and multiprocessing for parallel model evaluation.</li>
             <li>- Automated hyperparameter search for SVM models with dynamic result logging and Dockerized deployment.</li>
             <li>- Achieved 97.2% cross-validation accuracy in hyperparameter tuning for SVM models, with optimally computed hyperparameters</li>
           </ul>
