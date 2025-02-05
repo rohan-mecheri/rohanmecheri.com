@@ -162,21 +162,7 @@ export default function Home() {
           </ul>
           <ul style={{ paddingLeft: '40px', marginTop: '5px', listStyleType: 'none' }}>
             <li>
-              - Supplemental Instructor for 21-260 - Differential Equations under{' '}
-              <a
-                href="https://www.linkedin.com/in/junichi-koganemaru/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  textDecoration: 'none',
-                  color: '#0070f3',
-                  transition: 'text-decoration 0.2s ease',
-                }}
-                onMouseOver={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                onMouseOut={(e) => (e.currentTarget.style.textDecoration = 'none')}
-              >
-                Prof. Junichi Koganemaru
-              </a>{' '}
+              - Supplemental Instructor for Carnegie Mellon&apos;s 21-260 - Differential Equations.
             </li>
           </ul>
         </div>
