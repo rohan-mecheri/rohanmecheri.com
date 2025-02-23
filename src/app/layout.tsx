@@ -23,13 +23,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ backgroundColor: "#ffffff !important", height: "100vh", width: "100vw" }}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rohan Mecheri - Personal Website</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          backgroundColor: "#ffffff !important",
+          minHeight: "100vh",
+          margin: 0,
+          padding: 0,
+          width: "100vw",
+          display: "flex",
+        }}
       >
         {children}
       </body>

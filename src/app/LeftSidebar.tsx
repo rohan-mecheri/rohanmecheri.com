@@ -1,4 +1,4 @@
-'use client'; // Enable client-side rendering for interactivity
+'use client'; 
 
 export default function LeftSidebar() {
   return (
@@ -11,7 +11,6 @@ export default function LeftSidebar() {
         justifyContent: 'flex-start',
         backgroundColor: '#f4f4f4',
         padding: '40px',
-        height: '100vh',
       }}
     >
       {/* Profile Picture */}

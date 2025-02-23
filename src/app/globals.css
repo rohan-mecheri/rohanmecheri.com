@@ -14,25 +14,47 @@
 }
 
 /* Dark Mode Colors */
+/* Force Light Mode Always */
+:root {
+  --background: #ffffff !important;
+  --foreground: #171717 !important;
+  --primary: #0070f3 !important;
+  --secondary: #ff4081 !important;
+  --muted: #6b7280 !important;
+  --border: #e5e7eb !important;
+}
+
+/* Remove Dark Mode Styles Completely */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #3b82f6; /* Adjusted primary color for dark mode */
-    --secondary: #ec4899; /* Adjusted secondary color */
-    --muted: #9ca3af; /* Muted text color */
-    --border: #374151; /* Border color */
+    --background: #ffffff !important;
+    --foreground: #171717 !important;
   }
 }
 
-/* Global Styles */
-body {
-  color: var(--foreground);
-  background-color: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+/* Ensure Background is Applied to Everything */
+html, body {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background) !important; /* Forces background color */
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Force Light Mode to Prevent Safari Auto Dark Mode */
+html {
+  color-scheme: light !important;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -1,10 +1,10 @@
 'use client';
 
-import LeftSidebar from './LeftSidebar'; // Adjust the path based on where you place the file
+import LeftSidebar from './LeftSidebar'; 
 
 export default function Home() {
   return (
-    <div style={{ display: 'flex', height: '100%', fontFamily: 'Arial, sans-serif' }}>
+    <div style={{ display: 'flex', minHeight: '100vh', fontFamily: 'Arial, sans-serif' }}>
       <LeftSidebar />
 
       {/* Right Side */}
