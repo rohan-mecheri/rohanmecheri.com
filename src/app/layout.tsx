@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -7,14 +7,9 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Rohan Mecheri - Personal Website",
-  description: "Personal website showcasing projects and initiatives",
+  title: "Rohan Mecheri",
+  description: "Personal website of Rohan Mecheri",
 };
 
 export default function RootLayout({
@@ -23,24 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" style={{ backgroundColor: "#ffffff !important", height: "100vh", width: "100vw" }}>
+    <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rohan Mecheri - Personal Website</title>
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        style={{
-          backgroundColor: "#ffffff !important",
-          minHeight: "100vh",
-          margin: 0,
-          padding: 0,
-          width: "100vw",
-          display: "flex",
-        }}
-      >
-        {children}
-      </body>
+      <body className={`${geistSans.variable} antialiased`}>{children}</body>
     </html>
   );
 }
