@@ -96,7 +96,7 @@ function WorkRow({ item }: { item: WorkItem }) {
       onMouseLeave={() => setHovered(false)}
       style={{ padding: '14px 0', borderBottom: `1px solid ${DIVIDER}` }}
     >
-      <div style={{ fontSize: '20px', display: 'flex', alignItems: 'baseline', gap: '6px' }}>
+      <div style={{ fontSize: '18px', display: 'flex', alignItems: 'baseline', gap: '6px' }}>
         <span style={{ fontWeight: 600, color: FG }}>{item.role}</span>
         <span style={{ color: MUTED, fontWeight: 400 }}>·</span>
         {item.url ? (
@@ -117,7 +117,7 @@ function WorkRow({ item }: { item: WorkItem }) {
       {item.description && (
         <div
           style={{
-            fontSize: '16px',
+            fontSize: '15px',
             color: MUTED,
             lineHeight: 1.65,
             maxHeight: hovered ? '80px' : '0',
@@ -149,7 +149,7 @@ function ProjectRow({ item }: { item: ProjectItem }) {
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            fontSize: '20px',
+            fontSize: '18px',
             fontWeight: 600,
             color: hovered ? LINK_COLOR : FG,
             textDecoration: 'none',
@@ -204,23 +204,23 @@ export default function Home() {
         paddingRight: '20px',
       }}
     >
-      <div style={{ width: '100%', maxWidth: '680px' }}>
+      <div style={{ width: '100%', maxWidth: '620px' }}>
         {/* Profile */}
-        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '28px', justifyContent: 'center' }}>
-          <div style={{ width: '120px', height: '120px', borderRadius: '50%', overflow: 'hidden', border: `2px solid ${DIVIDER}`, flexShrink: 0 }}>
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '24px', justifyContent: 'center' }}>
+          <div style={{ width: '108px', height: '108px', borderRadius: '50%', overflow: 'hidden', border: `2px solid ${DIVIDER}`, flexShrink: 0 }}>
             <Image
               src="/profile.jpg"
               alt="Rohan Mecheri"
-              width={120}
-              height={120}
-              style={{ width: '120px', height: '120px', objectFit: 'cover', display: 'block' }}
+              width={108}
+              height={108}
+              style={{ width: '108px', height: '108px', objectFit: 'cover', display: 'block' }}
             />
           </div>
           <div>
-            <h1 style={{ fontSize: '36px', fontWeight: 600, color: FG, letterSpacing: '-0.02em' }}>
+            <h1 style={{ fontSize: '32px', fontWeight: 600, color: FG, letterSpacing: '-0.02em' }}>
               Rohan Mecheri
             </h1>
-            <p style={{ fontSize: '19px', color: MUTED, marginTop: '6px', lineHeight: 1.6 }}>
+            <p style={{ fontSize: '17px', color: MUTED, marginTop: '6px', lineHeight: 1.6 }}>
               Carnegie Mellon University
               <br />
               Applied Mathematics & Computer Science
@@ -239,7 +239,7 @@ export default function Home() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ fontSize: '17px', color: MUTED, textDecoration: 'none', transition: 'color 0.2s ease' }}
+              style={{ fontSize: '15px', color: MUTED, textDecoration: 'none', transition: 'color 0.2s ease' }}
               onMouseOver={e => (e.currentTarget.style.color = FG)}
               onMouseOut={e => (e.currentTarget.style.color = MUTED)}
             >
