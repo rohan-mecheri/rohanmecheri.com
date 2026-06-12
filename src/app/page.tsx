@@ -183,7 +183,7 @@ function ProjectRow({ item }: { item: ProjectItem }) {
 type Tab = 'experience' | 'projects';
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<Tab | null>(null);
+  const [activeTab, setActiveTab] = useState<Tab | null>('experience');
 
   const handleTab = (tab: Tab) => {
     setActiveTab(prev => (prev === tab ? null : tab));
